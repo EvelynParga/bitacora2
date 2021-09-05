@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head>
+        <link rel="stylesheet" href="css/stylep.css">
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+                <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <title>JS conceptos basicos</title>
+    </head>  
+    
+    <body>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="unidad1.html">Unidad 1</a></li>
+            </ul>
+        </nav>
+        
+        <div class="informacion4">
+            
+            <p id="titulo">JavaScript Conceptos basicos</p>
+            <h2>JavaScript</h2>
+            <p>JavaScript (abreviado comunmente JS) es un lenguaje de programacion orientado a objetos, dialecto del estandar ECMAScript.</p>
+            
+            <h2>Insertar JavaScript en HTML</h2>
+            <p>Hay dos formas de incluir JavaScript en HTML y hacer que funcionen juntos: Agregar JavaScript directamente a un archivo HTML, agregar codigo JavaScript en un archivo separado.</p>
+            
+            <h2>Agregar JavaScript directamente a un archivo HTML</h2>
+            
+            <p>Para insertar JS de forma directa en HTML se utiliza la etiqueta -script- -/script-, el codigo JS debe quedar dentro de esta etiqueta.</p>
+            <p>El codigo JS se puede colocar dentro de la etiqueta -head- o la etiqueta -body-</p>
+            <p>Dependiendo de donde se agregue el codigo JS en el archivo HTML. La carga sera diferente. Por lo genral se recomienda agregarlo en el -head- para que permanezca separado del contenido HTML.
+                Pero colocarlo dentro de -body- puede ayudar a mejorar la velocidad de carga, ya que el contenido del sitio web se encargara mas rapido, y solo despues de eso procesara el JavaScript.
+            </p>
+            
+            <h2>Agregar codigo JavaScript a un archivo separado</h2>
+            
+            <p>Insertar JS en HTML directamente no siempre  es la mejor opcion. Sobre todo si algunos scripts deben utilizarse en varias paginas, por lo tanto, es mejor mantener el codigo JS en archivos separados son:</p>
+            
+            <ol>Cuando los codigos HTML y JavaScript estan separados se cumple el principio de diseño de sepracion y hace que todo sea mucho mas sostenible y reutilizable.</ol>
+            <ol>La legibilidad y el mantenimiento del codigo es mucho mas facil.</ol>
+            <ol>Los archivos JavaScript en cache mejoran el rendimiento general del sitio web al disminuir el tiempo que tardan las paginas en cargarse.</ol>
+            
+            <h2>getElementById()</h2>
+            <p>El metodo getElementById() devuelve el elemento que tiene el atributo ID con el calor especificado.
+            
+            Este metodo es uno de los metodos mas comunes en el DOM de HTML y se usa casi cada vez que desea manipular u obtener informacion de un elemento de su documento.
+            
+            Se vuelve nulo si no existen elementos con el ID especificado.
+            
+            Una identificacion debe ser unica dentro de una pagina. Sin embargo, si existe mas de un elemento con el ID especificado, el metodo getElementById() devuelve el primer elemento en el codigo fuente.
+            </p>
+             <img id="jsid" class="jsid"src="img/jsid.JPG">
+            
+            <h2>Variables</h2>
+            <p>Las variables de JavaScript son contenedores para almacenar valores de datos.
+            
+            Todas las variables de JavaScript deben identificarse con nombres unicos.
+            
+            Estos nombres unicos se llaman identificadores.
+            
+            Los identificadores pueden ser nombres cortos (como x, y) o nombres mas descriptivos (edad, suma, volumen total).</p>
+            
+            <p>var, let y const para crear variables.
+            
+            var, abreviatura de variable, es una palabra clave de JavaScript que crea, o declara, una nueva variable.
+            
+            var edad;// para declarar la variable.
+                
+            edad // para llamar a la variable
+            
+            var personajeFavorito= "Bob Esponja"; </p>
+            
+            <p>La palabra clave let indica que la varible se puede reasignar a un valor diferente.
+            
+            Debemos tener en cuenta al usar let (o var) que podemos declarar una variable sin asignar un valor a la variable.
+            
+            En tal caso, la variable se inicializara automaticamente con un valor de indefinido.</p>
+            
+            <p>La palabra clave const tambien se introdujo y es la abreviatura de la plabra constante.
+            
+            Al igual que con var y le permite almacenar cualquier valor en una variable const.
+            
+            La forma en que declara una variable const y le asigna un valor sigue la misma estructura que let y var.
+            
+            Sin embargo, una variable const no se ouede reasignar porque es constante. Si se intenta reasignar una variable const, se obtiene un TypeError.
+            </p>
+             <img id="var" class="var" src="img/var.JPG">
+            <h2>Reglas</h2>
+            <p>Las reglas generales para construir nombres para variables (identificadores unicos) son:</p>
+            
+            <ol>Los nombres deben comenzar con una letra.</ol>
+            <ol>Los nombres pueden contener letras, digitos, guiones bajos y signos de dolar.</ol>
+            <ol>Los nombres tambien pueden comenzar con $ y_.</ol>
+            <ol>Los nombres distinguen entre mayusculas, minusculas (y e Y son variables diferentes)</ol>
+            <ol>Las palabras reservadas (como las palabras clave de JavaScript) no se pueden usar como nombres.</ol>
+  
+            <h2>Operadores aritmeticos</h2>
+            <p>JavaScript tiene un amplio conjunto de operadores, entre los que se incluyen operadores aritmeticos, logicos, bit a bit y de asignacion, asi como algunos operadores varios.
+            
+            Los operadores permiten realizar calculos complejos y tomar decisiones logicas en funcion de comparaciones y otros tipos de condiciones.
+            
+            Los operadores aritmeticos estandar son adicion o suma (+), sustraccion o resta(-), multiplicacion (*), y division (/), incremento (++), decremento (--).
+            </p>
+            <img id="operadores" class="operadores" src="img/operadores.JPG">
+        </div>
+        <script>
+            document.getElementById("titulo").style.color = "red";
+            document.getElementById("titulo").style.fontFamily = "Monoton";
+            document.getElementById("titulo").style.fontSize = "60px";
+        </script>
+    </body>
+</html>

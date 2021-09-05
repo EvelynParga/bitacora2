@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head>
+        <link rel="stylesheet" href="css/stylep.css">
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+                <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+        <title>Animacion en CSS</title>
+    </head>  
+    
+    <body>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="unidad1.html">Unidad 1</a></li>
+            </ul>
+        </nav>
+        
+        <div class="informacion3">
+            
+            <p id="titulo">Animacion en CSS</p>
+            
+            <h2>Animacion en CSS</h2>
+            <p>CSS3 permite animar la mayoria de los elementos HTML sin usar JavaScript.
+                Cuando especifica estilo CSS dentro de la regla @keyframes, la animacion funcione, se debe vincular la animacion a un elemento.
+                Para que una animacion funcione, se debe vinular la animacion a un elemento.
+            </p>
+            
+            <h2>Animacion en CSS-Propiedades</h2>
+            <p>@Keyframes: especifica el codigo de la animacion.
+                
+                animation-name: Especifica el nombre de la animacion @keyframes.
+                
+                animation-delay: Especifica un retraso para el inicio de una animacion. Se expresa en segundos. Se pueden utilizar unidades negativas.
+                
+                animation-duration: especifica cuanto tiempo debe transcurrir una animacion para completar un ciclo.</p>
+                <img id="duracion" class="duracion" src="img/duracion.JPG">
+                
+                <p>Si no se especifica la propiedad de duracion de la animacion, no se producira ninguna animacion, ya que el valor predeterminado es 0 segundos.
+                
+                Tambien, se puede especificar cuando cambiara usando "to(0% inicio)" y "from(100%, completo)".
+                
+                animation-timing-function: especifica la curva de velocidad de la animacion.
+            </p>
+            <img id="keyframes" class="keyframes" src="img/keyframes.JPG">
+                
+                <ol>Linear: especifica una animacion con la misma velocidad de principio a fin.</ol>
+            <ol>ease: especifica una animacion con inicio lento, luego rapido y luego termina lentamente.</ol>
+            <ol>ease-in: especifica una animacion con un inicio lento.</ol>
+            <ol>ease-out: especifica una animacion con un final lento.</ol>
+            <ol>ease-in-out: especifica una animacion con un inicio y un final lentos</ol>
+            <ol>cubic-beizer (n,n,n,n): permite definir sus propios valores en una funcion cubic-beizer. Requiere valores numericos de </ol>
+            
+            <p>animation-direction: especifica si una animacion debe reproducirse hacia adelante, hacia atras o en ciclos alternos.</p>
+            
+            <ol>normal: la animacion se reproduce de forma normal (hacia adelante).</ol>
+            <ol>reverse: la animacion se reproduce en direccion inversa (hacia atras).</ol>
+            <ol>alternate: la animacion se reproduce hacia delante primero, luego hacia atras.</ol>
+            <ol>alternate-reverse: la animacion se reproduce hacia atras primero, luego hacia adelante.
+            </ol>
+            
+            <ol>animation-iteration-count: especifica el numero de veces que se debe reproducir una animacion. Se expresa con numeros cerrados y se puede usar tambien infinito.</ol>
+            
+            <ol>animation-play-state: especifica si la animacion se esta ejecutando (running) o esta en pausa (paused).</ol>
+            
+            <p>animation-fill-mode: especifica un estilo para el elemento cuando la animacion no se esta reproduciendo (antes de que comience, despues de que termine o ambos).
+            </p>
+            <img id="fillmode" class="fillmode" src="img/fillmode.JPG">
+            
+            <ol>none: valor predeterminado. La animacion no aplicara ningun estilo al elemento antes o despues de ejecutarlo.</ol>
+            <ol>forwards: el elemento retendra los valores de estilo establecidos por el ultimo fotograma clave (depende de animation-direction y animation-interation-count)</ol>
+            <ol>backwards: el elemento obtendra los valores de estilo establecidos por el primer fotograma clave (depende de animation-dirction) y los conservara durante el periodo de demora de la animacion.</ol>
+            <ol>both: la animacion seguira las reglas tanto para adelante como para atras, extendiendo las propiedades de animacion en ambas direcciones.</ol>
+            
+            <p>animation: propiedad rapida para configurar todas las propiedades de la animacion, por ejemplo, los siguientes fragmentos expresan lo mismo:</p>
+            
+            <h2>Animacion con steps</h2>
+            <p> steps() es una funcion que nos permite dividir una animacion o transicion en segmentos, en lugar de una transicion continua de un estado a otro.
+                La funcion toma dos parametros: el primero especifica el numero positivo de paos que queremos que tome nuesra animacion.
+                
+                El segundo parametro define el punto en el que ocurrira la accion declarada en nuestros @keyframes. Este valor es opcional y su valor predeterminado sera "fin" sino se especifica. Una direccion de "inicio" denota una funcion continua ala izquierda y el primer paso de nuesra animacion se completara tan pronto como comience la animacion. Saltara inmediatamente al final del primer paso y permanecera alli hasta el final de la duracion de este paso.
+            </p>
+             <img id="steps" class="steps" src="img/steps.JPG">
+        </div>
+        <script>
+            document.getElementById("titulo").style.color = "red";
+            document.getElementById("titulo").style.fontFamily = "Monoton";
+            document.getElementById("titulo").style.fontSize = "85px";
+        </script>
+    </body>
+</html>
+            

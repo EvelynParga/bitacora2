@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head>
+        <link rel="stylesheet" href="css/stylep.css">
+        <meta http-equiv="content-type" content="text/html"; charset="utf-8" />
+                <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <title>ClassList</title>
+    </head>  
+    
+    <body>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="unidad1.html">Unidad 1</a></li>
+            </ul>
+        </nav>
+        
+        <div class="informacion7">
+            <p id="titulo">classList</p>
+            <h2>La propiedad classList</h2>
+            <p>La propiedad classList devuelve los nombres de clase de un elemento.
+                Esta propiedad es útil para agregar, eliminar y alternar clases CSS en un elemento. La propiedad classList es de solo lectura, sin embargo, puede modificarla utilizando los métodos add(), remove() y toggle().</p>
+            
+            <h2>classList.add()</h2>
+            <p>La propiedad classList mas el metodo add agrega uno o mas nombres de clase a un elemento. Si la clase especificada ya existe, la clase no se agregara.
+            </p>
+            <img id="add" class="add" src="img/add.JPG">
+            <h2>classList.remove()</h2>
+            <p>La propiedad classList mas el metodo remove elimina uno o mas nombres de clase de un elemento. Eliminar una clase que no existe, NO arroja un error.
+            </p>
+            <img id="remove" class="remove" src="img/remove.JPG">
+            <h2>classList.toggle()</h2>
+            <p>La propiedad classList mas el metodo toggle alterna entre un nombre de clase para un elemento. El primer parametro elimina la clase especificada de un elemento y devuelve falso.
+            Si la clase no existe, se agrega al elemento y el valor de retorni es verdadero. El segundo parametro opcional es un valor booleano que obliga a agregar o quitar la clase, independientemente de si ya existia o no. Por ejemplo:
+            </p>
+            <img id="toggle" class="toggle" src="img/toggle.JPG">
+        </div>
+        <script>
+            document.getElementById("titulo").style.color = "red";
+            document.getElementById("titulo").style.fontFamily = "Monoton";
+            document.getElementById("titulo").style.fontSize = "85px";
+        </script>
+    </body>
+</html>

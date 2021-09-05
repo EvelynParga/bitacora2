@@ -1,0 +1,45 @@
+*{margin: 0; padding: 0;}
+
+body{
+    text-align: center;
+    background-color: #ffcc59;
+}
+
+header{
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.album{
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    left: 380px;
+    top: 300px;
+    color: black;
+    text-align: center;
+}
+
+
+h1{
+    font-family: 'Monoton', cursive;
+    font-size: 100px;
+    color: aquamarine;
+    animation-name: tracklist;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+}
+
+@keyframes tracklist{
+    from{color: hotpink;}
+    to{color: deepskyblue;}
+}
+
+li{
+    font-size: 20px;
+    padding: 5px;
+    color: black;
+}
